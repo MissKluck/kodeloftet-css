@@ -1,18 +1,37 @@
+/*
+    Color palette
+*/
+:root[data-theme="light"] {
+  --color-text: #260015;
+  --color-background: #fff6fb;
+  --color-primary: #fc1b99;
+  --color-secondary: #fd9972;
+  --color-accent: #fdbe4d;
+}
+:root[data-theme="dark"] {
+  --color-text: #ffdbef;
+  --color-background: #0a0006;
+  --color-primary: #e20382;
+  --color-secondary: #8d2902;
+  --color-accent: #b17302;
+}
+
+
 body {
-  background-color: blueviolet;
+  background-color: var(--color-background);
 }
 
 h1 {
-  background-color: bisque;
+  background-color: var(--color-primary);
   height: 100px;
 }
 
 h2 {
-  background-color: aqua;
+  background-color: var(--color-secondary);
 }
 
 span {
-  color: gold;
+  color: var(--color-accent);
   
 }
 
@@ -21,7 +40,7 @@ span {
 }
 
 #welcome-section {
-  background-color: pink;
+  background-color: var(--color-secondary);
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 10px;
@@ -29,6 +48,6 @@ span {
 }
 
 #main-part-section {
-  background-color: aquamarine;
+  background-color: var(--color-primary);
   padding: 10px;
 }
