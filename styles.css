@@ -16,6 +16,15 @@
   --color-accent: #b17302;
 }
 
+/* Avstander(spacing)  */
+
+.root {
+  --spacing-short: 5px ;
+  --spacing-long: 15px; 
+  --spacing-medium: 20px; 
+
+}
+
 
 body {
   background-color: var(--color-background);
